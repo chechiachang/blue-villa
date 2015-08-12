@@ -1,0 +1,1017 @@
+[
+    {
+        "epData": "+27.9,54.9",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "17",
+        "devID": "64BB9F03004B1200",
+        "text": "+27.7℃ 55.9%RH",
+        "info": {
+            "name": "溫溼度計",
+            "sensor": "fa-gear fa-spin"
+        },
+        "typename": "溫溼度計",
+        "html": "27.9℃ 54.9%RH",
+        "status": "sensor",
+        "datatype": "sensor",
+        "type": "device",
+        "name": "展示室溫濕度計",
+        "icon": "fa-gear fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "462",
+                "y": "50",
+                "room_id": "1",
+                "size": "83.8"
+            }
+        ]
+    }, {
+        "epData": "+27.9,54.9",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "17",
+        "devID": "64BB9F03004B1201",
+        "text": "+27.7℃ 55.9%RH",
+        "info": {
+            "name": "溫溼度計",
+            "sensor": "fa-gear fa-spin"
+        },
+        "typename": "溫溼度計",
+        "html": "27.9℃ 54.9%RH",
+        "status": "sensor",
+        "datatype": "sensor",
+        "type": "device",
+        "name": "展示室溫濕度計",
+        "icon": "fa-gear fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "638",
+                "y": "50",
+                "room_id": "1",
+                "size": "83.8"
+            }
+        ]
+    },
+    {
+        "epData": "+27.9,54.9",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "17",
+        "devID": "64BB9F03004B1202",
+        "text": "+27.7℃ 55.9%RH",
+        "info": {
+            "name": "溫溼度計",
+            "sensor": "fa-gear fa-spin"
+        },
+        "typename": "溫溼度計",
+        "html": "27.9℃ 54.9%RH",
+        "status": "sensor",
+        "datatype": "sensor",
+        "type": "device",
+        "name": "展示室溫濕度計",
+        "icon": "fa-gear fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "811",
+                "y": "50",
+                "room_id": "1",
+                "size": "83.8"
+            }
+        ]
+    },
+    {
+        "epData": "+27.9,54.9",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "17",
+        "devID": "64BB9F03004B1205",
+        "text": "+27.7℃ 55.9%RH",
+        "info": {
+            "name": "溫溼度計",
+            "sensor": "fa-gear fa-spin"
+        },
+        "typename": "溫溼度計",
+        "html": "27.9℃ 54.9%RH",
+        "status": "sensor",
+        "datatype": "sensor",
+        "type": "device",
+        "name": "展示室溫濕度計",
+        "icon": "fa-gear fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "811",
+                "y": "344",
+                "room_id": "1",
+                "size": "83.8"
+            }
+        ]
+    },
+    {
+        "epData": "+23.7,66.7",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "17",
+        "devID": "43335702004B1207",
+        "text": "+24.7℃ 65.8%RH",
+        "info": {
+            "name": "溫溼度計",
+            "sensor": "fa-gear fa-spin"
+        },
+        "typename": "溫溼度計",
+        "html": "+23.7℃ 66.7%RH",
+        "status": "sensor",
+        "datatype": "sensor",
+        "type": "device",
+        "name": "展示室溫溼度計",
+        "icon": "fa-gear fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "811",
+                "y": "50",
+                "room_id": "2",
+                "size": "85"
+            }
+        ]
+    },
+    {
+        "epData": "+23.7,66.7",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "17",
+        "devID": "43335702004B1208",
+        "text": "+24.7℃ 65.8%RH",
+        "info": {
+            "name": "溫溼度計",
+            "sensor": "fa-gear fa-spin"
+        },
+        "typename": "溫溼度計",
+        "html": "+23.7℃ 66.7%RH",
+        "status": "sensor",
+        "datatype": "sensor",
+        "type": "device",
+        "name": "展示室溫溼度計",
+        "icon": "fa-gear fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "374",
+                "y": "344",
+                "room_id": "3",
+                "size": "85"
+            }
+        ]
+    },
+    {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1200",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "462",
+                "y": "260",
+                "room_id": "1",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1201",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "638",
+                "y": "260",
+                "room_id": "1",
+                "size": "21"
+            }
+        ]
+    }, {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1202",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "811",
+                "y": "260",
+                "room_id": "1",
+                "size": "21"
+            }
+        ]
+    }, {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1203",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "811",
+                "y": "320",
+                "room_id": "1",
+                "size": "21"
+            }
+        ]
+    }, {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1204",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "811",
+                "y": "260",
+                "room_id": "2",
+                "size": "21"
+            }
+        ]
+    }, {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1205",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "550",
+                "y": "320",
+                "room_id": "3",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1211",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "778",
+                "y": "260",
+                "room_id": "1",
+                "size": "21"
+            }
+        ]
+    }, {
+                "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1217",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "608",
+                "y": "260",
+                "room_id": "1",
+                "size": "21"
+            }
+        ]
+    }, {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1213",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "1050",
+                "y": "260",
+                "room_id": "1",
+                "size": "21"
+            }
+        ]
+    }, {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1214",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "1050",
+                "y": "260",
+                "room_id": "2",
+                "size": "21"
+            }
+        ]
+    }, {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1215",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "510",
+                "y": "320",
+                "room_id": "3",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "3",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "65",
+        "devID": "698D1F04004B1200",
+        "text": "OFF",
+        "info": {
+            "name": "窗簾控制",
+            "hold": "fa-unsorted",
+            "down": "fa-sort-desc",
+            "up": "fa-sort-asc"
+        },
+        "typename": "窗簾控制",
+        "status": "down",
+        "type": "device",
+        "name": "展示室窗簾控制",
+        "icon": "fa-sort-desc",
+        "openCtrlData": "2",
+        "closeCtrlData": "3",
+        "rooms": [
+            {
+                "x": "462",
+                "y": "20",
+                "room_id": "1",
+                "size": "190"
+            }
+        ]
+    }, {
+        "epData": "3",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "65",
+        "devID": "698D1F04004B1201",
+        "text": "OFF",
+        "info": {
+            "name": "窗簾控制",
+            "hold": "fa-unsorted",
+            "down": "fa-sort-desc",
+            "up": "fa-sort-asc"
+        },
+        "typename": "窗簾控制",
+        "status": "down",
+        "type": "device",
+        "name": "展示室窗簾控制",
+        "icon": "fa-sort-desc",
+        "openCtrlData": "2",
+        "closeCtrlData": "3",
+        "rooms": [
+            {
+                "x": "638",
+                "y": "20",
+                "room_id": "1",
+                "size": "190"
+            }
+        ]
+    }, {
+        "epData": "3",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "65",
+        "devID": "698D1F04004B1202",
+        "text": "OFF",
+        "info": {
+            "name": "窗簾控制",
+            "hold": "fa-unsorted",
+            "down": "fa-sort-desc",
+            "up": "fa-sort-asc"
+        },
+        "typename": "窗簾控制",
+        "status": "down",
+        "type": "device",
+        "name": "展示室窗簾控制",
+        "icon": "fa-sort-desc",
+        "openCtrlData": "2",
+        "closeCtrlData": "3",
+        "rooms": [
+            {
+                "x": "811",
+                "y": "20",
+                "room_id": "1",
+                "size": "190"
+            }
+        ]
+    }, {
+        "epData": "3",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "65",
+        "devID": "698D1F04004B1203",
+        "text": "OFF",
+        "info": {
+            "name": "窗簾控制",
+            "hold": "fa-unsorted",
+            "down": "fa-sort-desc",
+            "up": "fa-sort-asc"
+        },
+        "typename": "窗簾控制",
+        "status": "down",
+        "type": "device",
+        "name": "展示室窗簾控制",
+        "icon": "fa-sort-desc",
+        "openCtrlData": "2",
+        "closeCtrlData": "3",
+        "rooms": [
+            {
+                "x": "811",
+                "y": "442",
+                "room_id": "1",
+                "size": "190"
+            }
+        ]
+    }, {
+        "epData": "3",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "65",
+        "devID": "698D1F04004B1204",
+        "text": "OFF",
+        "info": {
+            "name": "窗簾控制",
+            "hold": "fa-unsorted",
+            "down": "fa-sort-desc",
+            "up": "fa-sort-asc"
+        },
+        "typename": "窗簾控制",
+        "status": "down",
+        "type": "device",
+        "name": "展示室窗簾控制",
+        "icon": "fa-sort-desc",
+        "openCtrlData": "2",
+        "closeCtrlData": "3",
+        "rooms": [
+            {
+                "x": "811",
+                "y": "20",
+                "room_id": "2",
+                "size": "190"
+            }
+        ]
+    }, {
+        "epData": "3",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "65",
+        "devID": "698D1F04004B1205",
+        "text": "OFF",
+        "info": {
+            "name": "窗簾控制",
+            "hold": "fa-unsorted",
+            "down": "fa-sort-desc",
+            "up": "fa-sort-asc"
+        },
+        "typename": "窗簾控制",
+        "status": "down",
+        "type": "device",
+        "name": "展示室窗簾控制",
+        "icon": "fa-sort-desc",
+        "openCtrlData": "2",
+        "closeCtrlData": "3",
+        "rooms": [
+            {
+                "x": "570",
+                "y": "452",
+                "room_id": "3",
+                "size": "190"
+            }
+        ]
+    },
+    {
+        "epData": "704",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "18",
+        "devID": "E40DFB04004B1201",
+        "text": "692PPM",
+        "info": {
+            "name": "CO2感測",
+            "sensor": "fa-cloud"
+        },
+        "typename": "CO2感測",
+        "html": "704 PPM",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "展示室CO2感測",
+        "icon": "fa-cloud",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "462",
+                "y": "130",
+                "room_id": "1",
+                "size": "84.8"
+            }
+        ]
+    }, {
+        "epData": "26",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "19",
+        "devID": "8E2A3803004B1201",
+        "text": "49LUX",
+        "info": {
+            "name": "光度感應",
+            "sensor": "fa-spinner fa-spin"
+        },
+        "typename": "光度感應",
+        "html": "104 LUX",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "辦公區溫溼度計",
+        "icon": "fa-spinner fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "542",
+                "y": "130",
+                "room_id": "1",
+                "size": "87.8"
+            }
+        ]
+    },
+    {
+        "epData": "704",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "18",
+        "devID": "E40DFB04004B1202",
+        "text": "692PPM",
+        "info": {
+            "name": "CO2感測",
+            "sensor": "fa-cloud"
+        },
+        "typename": "CO2感測",
+        "html": "704 PPM",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "展示室CO2感測",
+        "icon": "fa-cloud",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "638",
+                "y": "130",
+                "room_id": "1",
+                "size": "84.8"
+            }
+        ]
+    }, {
+        "epData": "26",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "19",
+        "devID": "8E2A3803004B1202",
+        "text": "49LUX",
+        "info": {
+            "name": "光度感應",
+            "sensor": "fa-spinner fa-spin"
+        },
+        "typename": "光度感應",
+        "html": "104 LUX",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "辦公區溫溼度計",
+        "icon": "fa-spinner fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "718",
+                "y": "130",
+                "room_id": "1",
+                "size": "87.8"
+            }
+        ]
+    }, {
+        "epData": "704",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "18",
+        "devID": "E40DFB04004B1203",
+        "text": "692PPM",
+        "info": {
+            "name": "CO2感測",
+            "sensor": "fa-cloud"
+        },
+        "typename": "CO2感測",
+        "html": "704 PPM",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "展示室CO2感測",
+        "icon": "fa-cloud",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "811",
+                "y": "130",
+                "room_id": "1",
+                "size": "84.8"
+            }
+        ]
+    }, {
+        "epData": "26",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "19",
+        "devID": "8E2A3803004B1203",
+        "text": "49LUX",
+        "info": {
+            "name": "光度感應",
+            "sensor": "fa-spinner fa-spin"
+        },
+        "typename": "光度感應",
+        "html": "104 LUX",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "辦公區溫溼度計",
+        "icon": "fa-spinner fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "891",
+                "y": "130",
+                "room_id": "1",
+                "size": "87.8"
+            }
+        ]
+    }, {
+        "epData": "704",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "18",
+        "devID": "E40DFB04004B1204",
+        "text": "692PPM",
+        "info": {
+            "name": "CO2感測",
+            "sensor": "fa-cloud"
+        },
+        "typename": "CO2感測",
+        "html": "704 PPM",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "展示室CO2感測",
+        "icon": "fa-cloud",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "801",
+                "y": "400",
+                "room_id": "1",
+                "size": "84.8"
+            }
+        ]
+    }, {
+        "epData": "26",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "19",
+        "devID": "8E2A3803004B1204",
+        "text": "49LUX",
+        "info": {
+            "name": "光度感應",
+            "sensor": "fa-spinner fa-spin"
+        },
+        "typename": "光度感應",
+        "html": "104 LUX",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "辦公區溫溼度計",
+        "icon": "fa-spinner fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "861",
+                "y": "400",
+                "room_id": "1",
+                "size": "87.8"
+            }
+        ]
+    }, {
+        "epData": "704",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "18",
+        "devID": "E40DFB04004B1205",
+        "text": "692PPM",
+        "info": {
+            "name": "CO2感測",
+            "sensor": "fa-cloud"
+        },
+        "typename": "CO2感測",
+        "html": "704 PPM",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "展示室CO2感測",
+        "icon": "fa-cloud",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "811",
+                "y": "130",
+                "room_id": "2",
+                "size": "84.8"
+            }
+        ]
+    }, {
+        "epData": "26",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "19",
+        "devID": "8E2A3803004B1205",
+        "text": "49LUX",
+        "info": {
+            "name": "光度感應",
+            "sensor": "fa-spinner fa-spin"
+        },
+        "typename": "光度感應",
+        "html": "104 LUX",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "辦公區溫溼度計",
+        "icon": "fa-spinner fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "891",
+                "y": "130",
+                "room_id": "2",
+                "size": "87.8"
+            }
+        ]
+    }, {
+        "epData": "704",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "18",
+        "devID": "E40DFB04004B1206",
+        "text": "692PPM",
+        "info": {
+            "name": "CO2感測",
+            "sensor": "fa-cloud"
+        },
+        "typename": "CO2感測",
+        "html": "704 PPM",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "展示室CO2感測",
+        "icon": "fa-cloud",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "550",
+                "y": "344",
+                "room_id": "3",
+                "size": "84.8"
+            }
+        ]
+    }, {
+        "epData": "26",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "19",
+        "devID": "8E2A3803004B1206",
+        "text": "49LUX",
+        "info": {
+            "name": "光度感應",
+            "sensor": "fa-spinner fa-spin"
+        },
+        "typename": "光度感應",
+        "html": "104 LUX",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "辦公區溫溼度計",
+        "icon": "fa-spinner fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "630",
+                "y": "344",
+                "room_id": "3",
+                "size": "87.8"
+            }
+        ]
+    }
+]

@@ -1,0 +1,667 @@
+[
+    {
+        "epData": "N",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "61",
+        "devID": "03AF9302004B1200",
+        "text": "ON",
+        "info": {
+            "name": "單切開關",
+            "on": "entypo-adjust",
+            "off": "entypo-adjust"
+        },
+        "typename": "單切開關",
+        "status": "off",
+        "type": "device",
+        "name": "河源辦公室單切開關",
+        "icon": "entypo-adjust",
+        "openCtrlData": "1",
+        "closeCtrlData": "0",
+        "rooms": [
+            {
+                "x": "10",
+                "y": "10",
+                "room_id": "office_layout",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "NN",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "62",
+        "devID": "26EE1704004B1200",
+        "text": null,
+        "info": {
+            "name": "雙切開關",
+            "on": "entypo-flow-parallel fa-rotate-90",
+            "off": "entypo-flow-parallel fa-rotate-90"
+        },
+        "typename": "雙切開關",
+        "status": "off",
+        "type": "device",
+        "name": "辦公區走廊雙切開關",
+        "icon": "entypo-flow-parallel fa-rotate-90",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "50",
+                "y": "50",
+                "room_id": "office_layout",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "0",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "12",
+        "devID": "2E186B02004B1200",
+        "text": "OFF",
+        "info": {
+            "name": "調光開關",
+            "on": "fa-sliders",
+            "off": "fa-sliders"
+        },
+        "typename": "調光開關",
+        "status": "off",
+        "html": "0%",
+        "type": "device",
+        "name": "展示室調光開關",
+        "icon": "fa-sliders",
+        "openCtrlData": "100",
+        "closeCtrlData": "0",
+        "rooms": [
+            {
+                "x": "686",
+                "y": "1.0833282470703125",
+                "room_id": "office_layout",
+                "size": "42"
+            }
+        ]
+    },
+    {
+        "epData": "0000",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "54",
+        "devID": "31DF1D04004B1200",
+        "text": null,
+        "info": {
+            "name": "雙切綁定開關",
+            "sensor": "fa-link"
+        },
+        "typename": "雙切綁定開關",
+        "status": "sensor",
+        "type": "device",
+        "name": "雙切綁定開關",
+        "icon": "fa-link",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "167",
+                "y": "289.0833282470703",
+                "room_id": "office_layout",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "NNN",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "63",
+        "devID": "4DD91704004B1200",
+        "text": null,
+        "info": {
+            "name": "三切開關",
+            "on": "entypo-flow-tree fa-rotate-270",
+            "off": "entypo-flow-tree fa-rotate-270"
+        },
+        "typename": "三切開關",
+        "status": "off",
+        "type": "device",
+        "name": "三切開關1",
+        "icon": "entypo-flow-tree fa-rotate-270",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "146.08998107910156",
+                "y": "245.80001831054687",
+                "room_id": "office_layout",
+                "size": "20"
+            }
+        ]
+    },
+    {
+        "epData": "1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "50",
+        "devID": "5A941005004B1200",
+        "text": null,
+        "info": {
+            "name": "單鍵插座",
+            "on": "fa-bolt",
+            "off": "fa-bolt"
+        },
+        "typename": "單鍵插座",
+        "status": "on",
+        "type": "device",
+        "name": "展示室單切插座",
+        "icon": "fa-bolt",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "582.25",
+                "y": "-0.366668701171875",
+                "room_id": "office_layout",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "+27.9,54.9",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "17",
+        "devID": "64BB9F03004B1200",
+        "text": "+27.7℃ 55.9%RH",
+        "info": {
+            "name": "溫溼度計",
+            "sensor": "fa-gear fa-spin"
+        },
+        "typename": "溫溼度計",
+        "html": "27.9℃54.9%RH",
+        "status": "sensor",
+        "datatype": "sensor",
+        "type": "device",
+        "name": "展示室溫濕度計",
+        "icon": "fa-gear fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "635.0666809082031",
+                "y": "95.68333435058594",
+                "room_id": "office_layout",
+                "size": "83.8"
+            }
+        ]
+    },
+    {
+        "epData": "3",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "65",
+        "devID": "698D1F04004B1200",
+        "text": "OFF",
+        "info": {
+            "name": "窗簾控制",
+            "hold": "fa-unsorted",
+            "down": "fa-sort-desc",
+            "up": "fa-sort-asc"
+        },
+        "typename": "窗簾控制",
+        "status": "down",
+        "type": "device",
+        "name": "展示室窗簾控制",
+        "icon": "fa-sort-desc",
+        "openCtrlData": "2",
+        "closeCtrlData": "3",
+        "rooms": [
+            {
+                "x": "612",
+                "y": "-0.9166717529296875",
+                "room_id": "office_layout",
+                "size": "190"
+            }
+        ]
+    },
+    {
+        "epData": "0",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "70",
+        "devID": "7E181505004B1200",
+        "text": null,
+        "info": {
+            "name": "四代門鎖",
+            "lock": "fa-key",
+            "inlock": "fa-exclamation"
+        },
+        "typename": "四代門鎖",
+        "status": "lock",
+        "type": "device",
+        "name": "四代門鎖1",
+        "icon": "fa-key",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "510",
+                "y": "2.0833282470703125",
+                "room_id": "office_layout",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "0500000D0888025800001A0000202A",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "15",
+        "devID": "84646002004B1200",
+        "text": "N/A",
+        "info": {
+            "name": "計量插座",
+            "on": "fa-plug",
+            "off": "fa-plug"
+        },
+        "typename": "計量插座",
+        "status": "on",
+        "html": "0.13A218.4V8.234Kwh",
+        "datatype": "electric",
+        "type": "device",
+        "name": "移動計量插座",
+        "icon": "fa-plug",
+        "openCtrlData": "11",
+        "closeCtrlData": "10",
+        "rooms": [
+            {
+                "x": "202",
+                "y": "243.33331298828125",
+                "room_id": "office_layout",
+                "size": "92"
+            }
+        ]
+    },
+    {
+        "epData": "26",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "19",
+        "devID": "8E2A3803004B1200",
+        "text": "49LUX",
+        "info": {
+            "name": "光度感應",
+            "sensor": "fa-spinner fa-spin"
+        },
+        "typename": "光度感應",
+        "html": "104 LUX",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "辦公區溫溼度計",
+        "icon": "fa-spinner fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "631.0833435058594",
+                "y": "62.883331298828125",
+                "room_id": "office_layout",
+                "size": "87.8"
+            }
+        ]
+    },
+    {
+        "epData": "00",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "22",
+        "devID": "A498CA02004B1200",
+        "text": "",
+        "info": {
+            "name": "紅外轉發",
+            "on": "entypo-signal",
+            "off": "entypo-signal"
+        },
+        "typename": "紅外轉發",
+        "status": "on",
+        "type": "device",
+        "name": "BenQ電視紅外轉發",
+        "icon": "entypo-signal",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "583.3333129882812",
+                "y": "32.18333435058594",
+                "room_id": "office_layout",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "0",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "B82A1B04004B1200",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示視窗戶感應器（David桌上）",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "509",
+                "y": "292.06666564941406",
+                "room_id": "office_layout",
+                "size": "1"
+            }
+        ]
+    },
+    {
+        "epData": "NN",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "62",
+        "devID": "CC0B3803004B1200",
+        "text": null,
+        "info": {
+            "name": "雙切開關",
+            "on": "entypo-flow-parallel fa-rotate-90",
+            "off": "entypo-flow-parallel fa-rotate-90"
+        },
+        "typename": "雙切開關",
+        "status": "off",
+        "type": "device",
+        "name": "門磁鎖雙切開關",
+        "icon": "entypo-flow-parallel fa-rotate-90",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "513",
+                "y": "36.08332824707031",
+                "room_id": "office_layout",
+                "size": "190"
+            }
+        ]
+    },
+    {
+        "epData": "704",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "18",
+        "devID": "E40DFB04004B1200",
+        "text": "692PPM",
+        "info": {
+            "name": "CO2感測",
+            "sensor": "fa-cloud"
+        },
+        "typename": "CO2感測",
+        "html": "704 PPM",
+        "datatype": "sensor",
+        "status": "sensor",
+        "type": "device",
+        "name": "展示室CO2感測",
+        "icon": "fa-cloud",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "631.9999694824219",
+                "y": "26.25",
+                "room_id": "office_layout",
+                "size": "84.8"
+            }
+        ]
+    },
+    {
+        "epData": "0",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "F881A803004B1200",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "大門入口",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "81",
+                "y": "694.4499816894531",
+                "room_id": "office_layout",
+                "size": "1"
+            }
+        ]
+    },
+    {
+        "epData": "-1",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "03",
+        "devID": "FF231B04004B1200",
+        "text": null,
+        "info": {
+            "name": "門磁感應",
+            "on": "fa-lock",
+            "off": "fa-unlock"
+        },
+        "typename": "門磁感應",
+        "status": "on",
+        "type": "device",
+        "name": "展示室入口（尚未安裝）",
+        "icon": "fa-lock",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "584",
+                "y": "65.44999694824219",
+                "room_id": "office_layout",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "0",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "0",
+        "epType": "02",
+        "devID": "96CDCA02004B1200",
+        "text": null,
+        "info": {
+            "name": "移動感測",
+            "on": "fa-bell",
+            "off": "fa-bell-slash"
+        },
+        "typename": "移動感測",
+        "status": "on",
+        "type": "device",
+        "name": "移動感測1",
+        "icon": "fa-bell",
+        "openCtrlData": null,
+        "closeCtrlData": null,
+        "rooms": [
+            {
+                "x": "509",
+                "y": "261.6499938964844",
+                "room_id": "office_layout",
+                "size": "21"
+            }
+        ]
+    },
+    {
+        "epData": "NNN",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "63",
+        "devID": "57F31704004B1200",
+        "text": "OFF",
+        "info": {
+            "name": "三切開關",
+            "on": "entypo-flow-tree fa-rotate-270",
+            "off": "entypo-flow-tree fa-rotate-270"
+        },
+        "typename": "三切開關",
+        "status": "off",
+        "type": "device",
+        "name": "攝影室三切開關",
+        "icon": "entypo-flow-tree fa-rotate-270",
+        "openCtrlData": "1",
+        "closeCtrlData": "0",
+        "rooms": [
+            {
+                "x": "498",
+                "y": "491.1499938964844",
+                "room_id": "office_layout",
+                "size": "1"
+            }
+        ]
+    },
+    {
+        "epData": "+23.7,66.7",
+        "ep": "14",
+        "epName": "",
+        "epStatus": "1",
+        "epType": "17",
+        "devID": "43335702004B1200",
+        "text": "+24.7℃ 65.8%RH",
+        "info": {
+            "name": "溫溼度計",
+            "sensor": "fa-gear fa-spin"
+        },
+        "typename": "溫溼度計",
+        "html": "+23.7℃66.7%RH",
+        "status": "sensor",
+        "datatype": "sensor",
+        "type": "device",
+        "name": "展示室溫溼度計",
+        "icon": "fa-gear fa-spin",
+        "openCtrlData": "null",
+        "closeCtrlData": "null",
+        "rooms": [
+            {
+                "x": "445.41668701171875",
+                "y": "248.48333740234375",
+                "room_id": "office_layout",
+                "size": "85"
+            }
+        ]
+    },
+    {
+        "type": "device",
+        "devID": "crestron1",
+        "epType": "crestron",
+        "text": "Crestron",
+        "icon": "crestron",
+        "html": "",
+        "ip": "http://192.168.16.134",
+        "status": "on",
+        "rooms": [
+            {
+                "x": "183",
+                "y": "430.1666564941406",
+                "room_id": "office_layout",
+                "size": "1"
+            }
+        ]
+    },
+    {
+        "type": "device",
+        "devID": "ipcam1",
+        "epType": "ipcam",
+        "text": "ipcam",
+        "icon": "fa-video-camera",
+        "html": "",
+        "ip": "http://192.168.16.16:8591",
+        "status": "on",
+        "rooms": [
+            {
+                "x": "588",
+                "y": "99.16665649414062",
+                "room_id": "office_layout",
+                "size": "1"
+            }
+        ]
+    },
+    {
+        "type": "device",
+        "devID": "ipcam2",
+        "epType": "ipcam",
+        "text": "ipcam",
+        "icon": "fa-video-camera",
+        "html": "",
+        "ip": "http://192.168.16.17:8592",
+        "status": "on",
+        "rooms": [
+            {
+                "x": "416",
+                "y": "142.16665649414062",
+                "room_id": "office_layout",
+                "size": "1"
+            }
+        ]
+    },
+    {
+        "type": "area",
+        "devID": "Z2FK6",
+        "room_id": "office_layout",
+        "name": "會計室",
+        "link": "accounting_room",
+        "notes": null,
+        "y": "162.13333129882812",
+        "x": "256",
+        "h": "158",
+        "w": "188"
+    },
+    {
+        "type": "area",
+        "devID": "Z2FK6",
+        "room_id": "office_layout",
+        "name": "辦公區",
+        "link": "main_area",
+        "notes": null,
+        "y": "162.13333129882812",
+        "x": "256",
+        "h": "158",
+        "w": "188"
+    }
+]

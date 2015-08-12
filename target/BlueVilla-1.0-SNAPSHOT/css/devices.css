@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 30, 2015, 9:15:09 AM
+    Author     : davidchang
+*/
+
+
+
+.ico-mode{
+    padding:3px;
+    color:orange;
+    background: rgba(0,0,0,0.7);
+    border:orange solid 2px;
+    border-radius: 20px;
+    float:left;
+    text-align: center;
+}
+.ico-mode.on{
+    color:greenyellow;
+    border:greenyellow solid 2px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+.ico-mode.off{
+    color:yellow;
+    border:yellow solid 2px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+.ico-mode.alert{
+    color:crimson;
+    border:crimson solid 2px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+.ico-mode.up{
+    color:greenyellow;
+    border:greenyellow solid 2px;
+}
+.ico-mode.hold{
+    color:greenyellow;
+    border:greenyellow solid 2px;
+}
+.ico-mode.down{
+    color:greenyellow;
+    border:greenyellow solid 2px;
+}
+.ico-mode.sensor{
+    color:aqua;
+    border:aqua solid 2px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+}
+.ico-mode>div{
+    float:left;
+}
+.ico-mode .info{
+    display:block;
+}
+.ico-mode .devID{
+    display:none;
+}
+.ico-mode {
+    text-align: center;
+}
+.ico-mode ul{
+    list-style: none;
+    padding: 1px;
+    margin: 0;
+    font-size: 12px;
+}
+.ico-mode span{
+    color:red;
+}
+.ico-mode.small{
+    transform: "scale(0.5, 0.5)";
+}
+.ico-mode.small ul{
+    display:none;
+}
+
+.title a{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+#device_table{
+    font-size: 16px;
+
+}
+li a{
+    font-size: 16px;
+}
