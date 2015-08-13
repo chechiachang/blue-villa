@@ -26,14 +26,14 @@ and open the template in the editor.
     border-radius: 20px;
 }
 .ico-mode.off{
-    color:yellow;
-    border:yellow solid 2px;
+    color:darkgreen;
+    border:darkgreen solid 2px;
     background: rgba(0,0,0,0.7);
     border-radius: 20px;
 }
 .ico-mode.alert{
-    color:crimson;
-    border:crimson solid 2px;
+    color:red;
+    border:red solid 2px;
     background: rgba(0,0,0,0.7);
     border-radius: 20px;
 }

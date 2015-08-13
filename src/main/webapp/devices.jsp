@@ -14,12 +14,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--jquery-->
         <script src="asset/jquery/jquery-1.11.2.min.js"></script>
-        <!-- Latest compiled and minified CSS -->
+        <!-- bootstrap -->
         <link href="asset/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <!-- Optional theme -->
         <link href="asset/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-        <!-- Latest compiled and minified JavaScript -->
         <script src="asset/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+        <link href="asset/bootstrap-toggle-master/css/bootstrap-toggle.min.css" rel="stylesheet" type="text/css"/>
+        <script src="asset/bootstrap-toggle-master/js/bootstrap-toggle.min.js"></script>
         <!-- Font-awesome -->
         <link href="asset/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <!-- JQuery UI -->

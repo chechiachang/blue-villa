@@ -47,22 +47,23 @@ function refresh_devices() {
             var color_class = "";
             switch (v.epType) {
                 case "02":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    if (v.devDataText.substr(0, 5).toLowerCase() == "alarm") {
+                    //var devInfo = $.parseJSON(v.devInfo);
+                    if (v.devDataText == "1") {
                         data = "alarm";
                         color_class = "alert";
-                    } else {
+                    } else if (v.devDataText == "0") {
                         data = "lock";
                         color_class = "on";
                     }
+
                     icon = devices_type.d02.on;
                     break;
                 case "03":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    if (v.devDataText.substr(0, 5).toLowerCase() == "alarm") {
+                    //var devInfo = $.parseJSON(v.devInfo);
+                    if (v.devDataText == "1") {
                         data = "open";
                         color_class = "alert";
-                    } else {
+                    } else if (v.devDataText == "0") {
                         data = "lock";
                         color_class = "on";
                     }
@@ -80,18 +81,20 @@ function refresh_devices() {
                      */
                     break;
                 case "12":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    data = devInfo[0].epData + "%";
-                    if (devInfo[0].epData == 0) {
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     data = devInfo[0].epData + "%";
+                     */
+                    if (v.devDataText == "0") {
                         color_class = "off";
                     } else {
                         color_class = "on";
                     }
+                    data = v.devDataText +"%";
                     icon = devices_type.d12.on;
                     break;
                 case "15":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    switch (devInfo[0].epData.substr(0, 4)) {
+                    switch (v.devDataText.substr(0, 4)) {
                         case "0100":
                             data = "off";
                             color_class = "off";
@@ -102,65 +105,91 @@ function refresh_devices() {
                             break;
                         case "0500"://0500 0000 08AA v 0258 f 000000 p 0000261B w
                             data = "";
-                            data += parseInt(devInfo[0].epData.substr(8, 4), 16) / 10 + "V</br>";
+                            data += parseInt(v.devDataText.substr(8, 4), 16) / 10 + "V</br>";
                             //data += parseInt(devInfo[0].epData.substr(16, 6), 16) + "P</br>";
-                            data += parseInt(devInfo[0].epData.substr(22, 8), 16) / 1000 + "kwh";
+                            data += parseInt(v.devDataText.substr(22, 8), 16) / 1000 + "kwh";
                             color_class = "on";
                             break;
                     }
                     icon = devices_type.d15.on;
                     break;
                 case "17":
-                    var devInfo = $.parseJSON(v.devInfo);
+                    //var devInfo = $.parseJSON(v.devInfo);
                     data = "" +
-                            devInfo[0].epData.substr(1, 4) + "℃</br>" +
-                            devInfo[0].epData.substr(6, 4) + "%";
+                            v.devDataText.substr(1, 4) + "℃</br>" +
+                            v.devDataText.substr(6, 4) + "%";
                     //+24.9,64.8
                     color_class = "sensor";
                     icon = devices_type.d17.on;
                     break;
                 case "18":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    data = devInfo[0].epData + "ppm";
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     data = devInfo + "ppm";
+                     */
+                    data = v.devDataText + "ppm";
                     color_class = "sensor";
                     icon = devices_type.d18.on;
                     break;
                 case "19":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    data = devInfo[0].epData + "Lux";
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     data = devInfo[0].epData + "Lux";
+                     */
+                    data = v.devDataText + "Lux";
                     color_class = "sensor";
                     icon = devices_type.d19.on;
                     break;
                 case "22":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    data = devInfo[0].epData;
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     data = devInfo[0].epData;
+                     */
+                    data = v.devDataText;
                     color_class = "on";
                     icon = devices_type.d22.on;
                     break;
                 case "42":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    data = devInfo[0].epData + "ppm";
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     data = devInfo[0].epData + "ppm";
+                     */
+                    data = v.devDataText + "ppm";
                     color_class = "sensor";
                     icon = devices_type.d42.on;
                     break;
                 case "50":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    data = devInfo[0].epData == 1 ? "on" : "off";
-                    color_class = "on";
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     data = devInfo[0].epData == 1 ? "on" : "off";
+                     */
+                    if (v.devDataText == "1") {
+                        data = "on";
+                        color_class = "on";
+                    } else if (v.devDataText == "0") {
+                        data = "off";
+                        color_class = "off";
+                    }
                     icon = devices_type.d50.on;
                     break;
                 case "54":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    data = devInfo[0].epData == 1 ? "alert" : "lock";
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     data = devInfo[0].epData == 1 ? "alert" : "lock";
+                     */
+                    data = v.devDataText == "1" ? "alert" : "lock";
                     color_class = "on";
                     icon = devices_type.d54.on;
                     break;
                 case "61":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    for (var i = 0; i < devInfo.length; i++) {
-                        data += devInfo[i].epData;
-                    }
-                    if (data == 0) {
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     for (var i = 0; i < devInfo.length; i++) {
+                     data += devInfo[i].epData;
+                     }
+                     */
+                    data = v.devDataText;
+                    if (data == "0") {
                         color_class = "off";
                     } else {
                         color_class = "on";
@@ -168,11 +197,15 @@ function refresh_devices() {
                     icon = devices_type.d61.on;
                     break;
                 case "62":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    for (var i = 0; i < devInfo.length; i++) {
-                        data += devInfo[i].epData;
-                    }
-                    if (data == "00") {
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     for (var i = 0; i < devInfo.length; i++) {
+                     data += devInfo[i].epData;
+                     }
+                     */
+                    data = v.devDataText;
+                    //if (data == "00") {
+                    if (data == "0") {
                         color_class = "off";
                     } else {
                         color_class = "on";
@@ -180,11 +213,15 @@ function refresh_devices() {
                     icon = devices_type.d62.on;
                     break;
                 case "63":
-                    var devInfo = $.parseJSON(v.devInfo);
-                    for (var i = 0; i < devInfo.length; i++) {
-                        data += devInfo[i].epData;
-                    }
-                    if (data == "000") {
+                    /*
+                     var devInfo = $.parseJSON(v.devInfo);
+                     for (var i = 0; i < devInfo.length; i++) {
+                     data += devInfo[i].epData;
+                     }
+                     */
+                    data = v.devDataText;
+                    //if (data == "000") {
+                    if (data == "0") {
                         color_class = "off";
                     } else {
                         color_class = "on";
@@ -200,12 +237,12 @@ function refresh_devices() {
                             data = "hold";
                             icon = devices_type.d65.hold;
                             break;
-                        case "2":
+                        case "3":
                         case "on":
                             data = "up";
                             icon = devices_type.d65.up;
                             break;
-                        case "3":
+                        case "2":
                         case "off":
                             data = "down";
                             icon = devices_type.d65.down;
@@ -249,7 +286,7 @@ function refresh_devices() {
 
             //create div html
             //var html = '<a href="#" onclick="show_ctrl(' + v.epType + ',' + v.devID + ');">'
-            var html = '<div id="' + v.devID + '" eptype="' + v.epType + '" dev="' + v.devID + '" epdata="' + devInfo[0].epData
+            var html = '<div id="' + v.devID + '" eptype="' + v.epType + '" dev="' + v.devID + '" epdata="' + v.devDataText
                     + '" class="ctl ' + color_class + '"><i class="' + icon + '"></i>';
             if (data.length > 0)
                 html += '<ul><li>' + data + '</li></ul><span></span>';
@@ -409,7 +446,7 @@ function show_ctrl(eptype, devID) {
 }
 function send_ctrl(devID, epType, ctrlcode, keepme) {
     //$.post('http://localhost/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '50294D2070F5', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
-    $.post('http://localhost/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '40124CDC6628', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
+    $.post('http://localhost:8084/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '40124CDC6628', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
         if (!keepme)
             $('#ctrl-modal').modal('hide');
         refresh_devices(true);
@@ -445,9 +482,9 @@ function close_modal() {
     $('#ctrl-modal').modal('hide');
 }
 /*
-function clear_alert(devID, epType) {
-    get_data('_includes/devices.php?cmd=clear', {devID: devID, epType: epType}, function (res) {
-        close_modal();
-    });
-}
-*/
+ function clear_alert(devID, epType) {
+ get_data('_includes/devices.php?cmd=clear', {devID: devID, epType: epType}, function (res) {
+ close_modal();
+ });
+ }
+ */
