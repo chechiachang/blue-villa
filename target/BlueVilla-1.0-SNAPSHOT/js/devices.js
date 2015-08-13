@@ -193,16 +193,20 @@ function refresh_devices() {
                     break;
                 case "65":
                     var devInfo = $.parseJSON(v.devInfo);
-                    switch (devInfo[0].epData) {
+                    //switch (devInfo[0].epData) {
+                    switch (v.devDataText.toLowerCase()) {
                         case "1":
+                        case "stop":
                             data = "hold";
                             icon = devices_type.d65.hold;
                             break;
                         case "2":
+                        case "on":
                             data = "up";
                             icon = devices_type.d65.up;
                             break;
                         case "3":
+                        case "off":
                             data = "down";
                             icon = devices_type.d65.down;
                             break;
@@ -404,7 +408,8 @@ function show_ctrl(eptype, devID) {
     }
 }
 function send_ctrl(devID, epType, ctrlcode, keepme) {
-    $.post('http://localhost/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '50294D2070F5',strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
+    //$.post('http://localhost/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '50294D2070F5', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
+    $.post('http://localhost/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '40124CDC6628', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
         if (!keepme)
             $('#ctrl-modal').modal('hide');
         refresh_devices(true);
@@ -439,8 +444,10 @@ function create_modal(title, cont) {
 function close_modal() {
     $('#ctrl-modal').modal('hide');
 }
+/*
 function clear_alert(devID, epType) {
     get_data('_includes/devices.php?cmd=clear', {devID: devID, epType: epType}, function (res) {
         close_modal();
     });
 }
+*/
