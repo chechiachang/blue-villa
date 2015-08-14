@@ -66,7 +66,7 @@
 
         </style>
     </head>
-     <body style="background-image: url('images/background/shallowsea.jpg');">
+    <body style="background-image: url('images/background/shallowsea.jpg');">
         <c:import url="GetAllFloorAction"></c:import>
         <c:import url="GetAllRoomAction"></c:import>
         <jsp:include page="navbar.jsp"></jsp:include>
@@ -115,7 +115,7 @@
 
                     </div>
                     <div class="col-lg-5">
-                        <div><p id="fullcalendarHead">101 室</p></div>
+                        <div><p id="fullcalendarHead">青</p></div>
                         <input id="thisroomid" value="101" hidden>
                         <div id="oneDayCalendar"></div>
                     </div>
@@ -216,6 +216,7 @@
 
                             $('input#roomId').val($('input#thisroomid').val());
                             $('input#createdBy').val($('input#loginuser').val());
+                            $('input#roomName').val($('p#fullcalendarHead').html());
                             SetDatepicker($('input#startDatepicker'), start);
                             SetDatepicker($('input#endDatepicker'), start);
                             initLoadTimeSelect($('select#startTimeSelect'));
@@ -253,6 +254,7 @@
                                 $('input#utitle').val(event.title);
                                 $('input#udescription').val(event.description);
                                 $('input#uroomId').val($('input#thisroomid').val());
+                                $('input#uroomName').val($('p#fullcalendarHead').html());
                                 $('input#modifiedBy').val($('input#loginuser').val());
                                 SetDatepicker($('input#ustartDatepicker'), event.start);
                                 SetDatepicker($('input#uendDatepicker'), event.end);
@@ -269,6 +271,7 @@
                                 $('input#atitle').val(event.title);
                                 $('input#adescription').val(event.description);
                                 $('input#aroomId').val($('input#thisroomid').val());
+                                $('input#aroomName').val($('p#fullcalendarHead').html());
                                 $('input#acreatedBy').val(event.createdBy);
                                 $('input#memo').val(event.memo);
                                 SetDatepicker($('input#astartDatepicker'), event.start);
@@ -502,7 +505,7 @@
 
             function ChangeRoom(roomId) {
                 $('input#thisroomid').val(roomId);
-                $('p#fullcalendarHead').text(roomId + " 室");
+                $('p#fullcalendarHead').text(RoomIdToName(roomId));
                 $('div#oneDayCalendar').fullCalendar('destroy');
                 InitialFullCalendar(roomId);
                 /*
@@ -514,7 +517,18 @@
                  $('div#oneDayCalendar').fullCalendar('refetchEvents');
                  */
             }
-
+            function RoomIdToName(roomId) {
+                switch (roomId) {
+                    case 101:
+                        return "青";
+                    case 102:
+                        return "藍";
+                    case 103:
+                        return "靛";
+                    case 104:
+                        return "紫";
+                }
+            }
         </script>
     </body>
 </html>

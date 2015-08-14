@@ -122,7 +122,7 @@
                     <div id="roomInfo" class="col-lg-3">
                         <form>
                             <div class="form-group">
-                                <h4>會議內容</h4>
+                                <h4>預約內容</h4>
                                 <div class="input-group">
                                     <div class="input-group-addon">預約名稱</div>
                                     <input id="title" class="form-control"/>
@@ -436,7 +436,7 @@
             /*
              function ChangeRoom(roomId) {
              $('input#thisroomid').val(roomId);
-             $('p#fullcalendarHead').text(roomId + " 會議室");
+             $('p#fullcalendarHead').text(roomId + " 預約室");
              $('div#todayCalendar').fullCalendar('destroy');
              InitialFullCalendar(roomId);
              }

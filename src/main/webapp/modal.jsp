@@ -25,10 +25,11 @@
                             <form method="post" action="RoomEventJsonServlet">
                                 <input name="cmd" hidden value="insert">
                                 <div class="row">
+                                    <input type="text" id="roomId" name="roomId" class="form-control" readonly hidden>
                                     <div class="input-group">
-                                        <div class="input-group-addon">會議地點</div>
-                                        <input type="text" id="roomId" name="roomId" class="form-control" readonly>
-                                        <div class="input-group-addon">會議室</div>
+                                        <div class="input-group-addon">預約房間</div>
+                                        <input type="text" id="roomName" name="roomName" class="form-control" readonly>
+                                        <div class="input-group-addon"></div>
                                     </div>
                                     <br/>
                                     <div class="input-group">
@@ -37,12 +38,12 @@
                                     </div>
                                     <br/>
                                     <div class="input-group">
-                                        <div class="input-group-addon">會議名稱</div>
+                                        <div class="input-group-addon">預約名稱</div>
                                         <input type="text" id="title" name="title" class="form-control" placeholder="請輸入首頁顯示資訊">
                                     </div>
                                     <br/>
                                     <div class="input-group">
-                                        <div class="input-group-addon">會議備註</div>
+                                        <div class="input-group-addon">預約備註</div>
                                         <input type="text" id="description" name="description" class="form-control" placeholder="請輸入其他資訊">
                                     </div>
                                 </div>
@@ -110,10 +111,11 @@
                                 <input id="uUrl" name="url" hidden value="">
                                 <input id="uAllDay" name="allDay" hidden value="">
                                 <div class="row">
+                                    <input type="text" id="uroomId" name="roomId" class="form-control" readonly hidden>
                                     <div class="input-group">
-                                        <div class="input-group-addon">會議地點</div>
-                                        <input type="text" id="uroomId" name="roomId" class="form-control" readonly>
-                                        <div class="input-group-addon">會議室</div>
+                                        <div class="input-group-addon">預約房間</div>
+                                        <input type="text" id="uroomName" name="roomName" class="form-control" readonly>
+                                        <div class="input-group-addon"></div>
                                     </div>
                                     <br/>
                                     <div class="input-group">
@@ -122,12 +124,12 @@
                                     </div>
                                     <br/>
                                     <div class="input-group">
-                                        <div class="input-group-addon">會議名稱</div>
+                                        <div class="input-group-addon">預約名稱</div>
                                         <input type="text" id="utitle" name="title" class="form-control">
                                     </div>
                                     <br/>
                                     <div class="input-group">
-                                        <div class="input-group-addon">會議備註</div>
+                                        <div class="input-group-addon">預約備註</div>
                                         <input type="text" id="udescription" name="description" class="form-control" placeholder="請輸入其他資訊">
                                     </div>
                                 </div>
@@ -173,10 +175,12 @@
                                 <input name="modifiedBy" hidden value="${user}">
                                 <input id="aId" name="aId" hidden value="">
                                 <div class="row">
+                                    <input type="text" id="aroomId" name="roomId" class="form-control" readonly hidden>
                                     <div class="input-group">
-                                        <div class="input-group-addon">會議地點</div>
-                                        <input type="text" id="aroomId" name="roomId" class="form-control" readonly>
-                                        <div class="input-group-addon">會議室</div>
+                                        <div class="input-group-addon">預約房間</div>
+                                        <input type="text" id="aroomName" name="roomName" class="form-control" readonly>
+                                        <div class="input-group-addon"></div>
+
                                     </div>
                                     <br/>
                                     <div class="input-group">
@@ -185,12 +189,12 @@
                                     </div>
                                     <br/>
                                     <div class="input-group">
-                                        <div class="input-group-addon">會議名稱</div>
+                                        <div class="input-group-addon">預約名稱</div>
                                         <input type="text" id="atitle" name="title" class="form-control" readonly="readonly">
                                     </div>
                                     <br/>
                                     <div class="input-group">
-                                        <div class="input-group-addon">會議備註</div>
+                                        <div class="input-group-addon">預約備註</div>
                                         <input type="text" id="adescription" name="description" class="form-control" readonly="readonly">
                                     </div>
                                 </div>
