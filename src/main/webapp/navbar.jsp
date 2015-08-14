@@ -48,6 +48,7 @@
                         <li><a href="table.jsp">報表<span class="sr-only">(current)</span></a></li>
                         -->
                         <li><a href="signage.jsp">導引看板</a></li>
+                        <li><a href="dvr.jsp">監視系統</a></li>
                         <!--
                         <li><a href="floorplansetup.jsp">空間管理</a></li>
                         -->

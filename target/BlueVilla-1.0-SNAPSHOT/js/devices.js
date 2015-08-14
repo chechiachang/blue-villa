@@ -90,7 +90,7 @@ function refresh_devices() {
                     } else {
                         color_class = "on";
                     }
-                    data = v.devDataText +"%";
+                    data = v.devDataText + "%";
                     icon = devices_type.d12.on;
                     break;
                 case "15":
@@ -325,7 +325,7 @@ function show_ctrl(eptype, devID) {
         case "03":
             console.log("03");
             var cont = '<div>裝置ID：' + devID + '</div>';
-            var btn1 = '<div><br /><button type="button" class="btn btn-default" onclick="send_ctrl(\'' + devID + '\', \'' + eptype + '\', \'0\');">撤防</button>';
+            var btn1 = '<div><br /><button type="button" class="tn btn-default" onclick="send_ctrl(\'' + devID + '\', \'' + eptype + '\', \'0\');">撤防</button>';
             var btn2 = ' &nbsp; <button type="button" class="btn btn-default" onclick="send_ctrl(\'' + devID + '\', \'' + eptype + '\',\'1\');">佈防</button></div>';
             cont = cont + btn1 + btn2;
             var dev_name = eptype == "02" ? "門窗感應裝置" : "紅外感應裝置";
@@ -446,7 +446,8 @@ function show_ctrl(eptype, devID) {
 }
 function send_ctrl(devID, epType, ctrlcode, keepme) {
     //$.post('http://localhost/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '50294D2070F5', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
-    $.post('http://localhost:8084/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '40124CDC6628', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
+    //$.post('http://localhost:8084/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '40124CDC6628', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
+    $.post('http://192.168.0.109/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '50294D2070F5', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
         if (!keepme)
             $('#ctrl-modal').modal('hide');
         refresh_devices(true);
