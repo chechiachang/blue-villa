@@ -520,13 +520,13 @@
             function RoomIdToName(roomId) {
                 switch (roomId) {
                     case 101:
-                        return "青";
-                    case 102:
                         return "藍";
-                    case 103:
+                    case 102:
                         return "靛";
+                    case 103:
+                        return "青";
                     case 104:
-                        return "紫";
+                        return "碧";
                 }
             }
         </script>

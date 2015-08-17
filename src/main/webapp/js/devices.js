@@ -447,7 +447,7 @@ function show_ctrl(eptype, devID) {
 function send_ctrl(devID, epType, ctrlcode, keepme) {
     //$.post('http://localhost/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '50294D2070F5', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
     //$.post('http://localhost:8084/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '40124CDC6628', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
-    $.post('http://192.168.0.109/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '50294D2070F5', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
+    $.post('http://192.168.141.119/Wulian2Bluevilla/Transervlet?cmd=control', {strGwID: '50294D2070F5', strDevID: devID, strDevType: epType, strCtrlData: ctrlcode}, function (res) {
         if (!keepme)
             $('#ctrl-modal').modal('hide');
         refresh_devices(true);
