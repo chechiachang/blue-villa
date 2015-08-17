@@ -234,17 +234,17 @@ function refresh_devices() {
                     switch (v.devDataText.toLowerCase()) {
                         case "1":
                         case "stop":
-                            data = "hold";
+                            data = "暫停";
                             icon = devices_type.d65.hold;
                             break;
                         case "3":
                         case "on":
-                            data = "up";
+                            data = "關閉";
                             icon = devices_type.d65.up;
                             break;
                         case "2":
                         case "off":
-                            data = "down";
+                            data = "開啟";
                             icon = devices_type.d65.down;
                             break;
                     }
