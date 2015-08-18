@@ -49,10 +49,13 @@ function refresh_devices() {
                 case "02":
                     //var devInfo = $.parseJSON(v.devInfo);
                     if (v.devDataText == "1") {
-                        data = "alarm";
+                        //data = "alarm";
+                        data = "偵測";
                         color_class = "alert";
                     } else if (v.devDataText == "0") {
-                        data = "lock";
+
+                        //data = "lock";
+                        data = "安全";
                         color_class = "on";
                     }
 
@@ -61,10 +64,12 @@ function refresh_devices() {
                 case "03":
                     //var devInfo = $.parseJSON(v.devInfo);
                     if (v.devDataText == "1") {
-                        data = "open";
+                        //data = "open";
+                        data = "開啟";
                         color_class = "alert";
                     } else if (v.devDataText == "0") {
-                        data = "lock";
+                        //data = "lock";
+                        data = "安全";
                         color_class = "on";
                     }
                     icon = devices_type.d03.on;
@@ -145,7 +150,7 @@ function refresh_devices() {
                      var devInfo = $.parseJSON(v.devInfo);
                      data = devInfo[0].epData;
                      */
-                    data = v.devDataText;
+                    //data = v.devDataText;
                     color_class = "on";
                     icon = devices_type.d22.on;
                     break;
@@ -177,7 +182,7 @@ function refresh_devices() {
                      var devInfo = $.parseJSON(v.devInfo);
                      data = devInfo[0].epData == 1 ? "alert" : "lock";
                      */
-                    data = v.devDataText == "1" ? "alert" : "lock";
+                    data = v.devDataText == "1" ? "報警" : "安全";
                     color_class = "on";
                     icon = devices_type.d54.on;
                     break;
@@ -234,17 +239,20 @@ function refresh_devices() {
                     switch (v.devDataText.toLowerCase()) {
                         case "1":
                         case "stop":
-                            data = "暫停";
+                            //data = "hold";
+                            data = "半開";
                             icon = devices_type.d65.hold;
                             break;
                         case "3":
                         case "on":
-                            data = "關閉";
+                            //data = "close";
+                            data = "全關";
                             icon = devices_type.d65.up;
                             break;
                         case "2":
                         case "off":
-                            data = "開啟";
+                            //data="off";
+                            data = "全開";
                             icon = devices_type.d65.down;
                             break;
                     }
