@@ -31,6 +31,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -102,6 +103,31 @@ public class RoomEventJsonServlet extends HttpServlet {
                     response.setContentType("application/json");
                     response.setContentType("text/html;charset=UTF-8");
                     out.write(json);
+                    break;
+                }
+                case "getlist": {
+                    pstmt = conn.prepareStatement("SELECT `id`, `roomId`, `start`, `end`, `guestNum`, `guestName`, `guestID`, `guestPhone`, `guestAddress`, `description` FROM `room_events` WHERE `deleted` != '1' ORDER BY `id`");
+                    rs = pstmt.executeQuery();
+                    List list = new ArrayList<>();
+                    while (rs.next()) {
+                        Event event = new Event();
+                        event.setId(rs.getInt("id"));
+                        event.setRoomId(rs.getInt("roomId"));
+                        event.setStart(rs.getString("start").substring(0, 19).replace(" ", "T"));
+                        event.setEnd(rs.getString("end").substring(0, 19).replace(" ", "T"));
+                        event.setGuestNum(rs.getInt("guestNum"));
+                        event.setGuestName(rs.getString("guestName"));
+                        event.setGuestID(rs.getString("guestID"));
+                        event.setGuestPhone(rs.getString("guestPhone"));
+                        event.setGuestAddress(rs.getString("guestAddress"));
+                        event.setDescription(rs.getString("description"));
+                        list.add(event);
+                    }
+                    rs.close();
+                    HttpSession session = request.getSession();
+                    session.setAttribute("events", list);
+                    session.setMaxInactiveInterval(5 * 60);
+
                     break;
                 }
                 case "room": {
@@ -208,8 +234,21 @@ public class RoomEventJsonServlet extends HttpServlet {
                             + "`start` = '" + URLDecoder.decode(request.getParameter("startDate"), "UTF-8") + " " + URLDecoder.decode(request.getParameter("startTime"), "UTF-8") + ":00', "
                             + "`end` = '" + URLDecoder.decode(request.getParameter("endDate"), "UTF-8") + " " + URLDecoder.decode(request.getParameter("endTime"), "UTF-8") + ":00' "
                             + "WHERE `id` = '" + request.getParameter("uId") + "'";
-                    stmt.executeUpdate(strSql);
+                    out.write(stmt.executeUpdate(strSql));
                     response.sendRedirect("floorplan.jsp");
+                    break;
+                }
+                case "listupdate": {
+                    pstmt = conn.prepareStatement("UPDATE `room_events` SET"
+                            + "`guestNum` = '" + request.getParameter("guestNum") + "', "
+                            + "`guestName` = '" + request.getParameter("guestName") + "', "
+                            + "`guestID` = '" + request.getParameter("guestID") + "', "
+                            + "`guestPhone` = '" + request.getParameter("guestPhone") + "', "
+                            + "`guestAddress` = '" + request.getParameter("guestAddress") + "', "
+                            + "`description` = '" + request.getParameter("description") + "' "
+                            + " WHERE `id` = '" + request.getParameter("id") + "'");
+                    pstmt.executeUpdate();
+                    response.sendRedirect("events.jsp");
                     break;
                 }
                 case "resize": {
@@ -226,7 +265,7 @@ public class RoomEventJsonServlet extends HttpServlet {
                 }
                 case "delete": {
                     stmt = conn.createStatement();
-                    String strSql = "UPDATE `room_events` SET `deleted` = '1' WHERE `id` = '" + request.getParameter("uId") + "'";
+                    String strSql = "UPDATE `room_events` SET `deleted` = '1' WHERE `id` = '" + request.getParameter("id") + "'";
                     stmt.executeUpdate(strSql);
                     break;
                 }

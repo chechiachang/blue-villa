@@ -1,5 +1,6 @@
 com/ccc/bm/service/ObjectClassService.class
 com/ccc/bm/entity/Vehicle.class
+com/ccc/bm/action/GetUserInfoAction.class
 com/ccc/bm/servlet/DbConnection.class
 com/ccc/util/XmlMapping.class
 com/ccc/bm/servlet/RoomEventJsonServlet.class

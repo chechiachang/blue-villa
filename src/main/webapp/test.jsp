@@ -4,6 +4,7 @@
     Author     : davidchang
 --%>
 
+<%@page import="com.ccc.bm.entity.Event"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
 <%@page import="com.ccc.bm.entity.Device"%>
@@ -26,7 +27,9 @@
         <%
 
             Connection conn = null;
-            PreparedStatement ps = null;
+            PreparedStatement pstmt = null;
+
+            ResultSet rs;
             String left = "343";
             String top = "543";
             String devID = "FF231B04004B1200";
@@ -35,14 +38,15 @@
             Class.forName(configXml.LookupKey("DRIVER_MANAGER"));
             conn = DriverManager.getConnection(configXml.LookupKey("DB_URL"), configXml.LookupKey("USER"), configXml.LookupKey("PASS"));
 
-            ps = conn.prepareStatement(" INSERT INTO `devices_location` (devID,location) VALUES(?,?) "
-                    + " ON DUPLICATE KEY UPDATE "
-                    + " location=VALUES(location) ");
-            ps.setString(1, devID);
-            ps.setString(2, left + "," + top);
-            String result = String.valueOf(ps.executeUpdate());
-
-            out.write(result);
+            pstmt = conn.prepareStatement("UPDATE `room_events` SET"
+                    + "`guestNum` = '" + 1 + "', "
+                    + "`guestName` = '" + 2 + "', "
+                    + "`guestID` = '" + 3 + "', "
+                    + "`guestPhone` = '" + 4 + "', "
+                    + "`guestAddress` = '" + 5 + "', "
+                    + "`description` = '" + 6 + "' "
+                    + " WHERE `id` = '" + 2 + "'");
+            out.write(pstmt.executeUpdate());
         %>
     </body>
 </html>

@@ -43,12 +43,12 @@
                     <ul class="nav navbar-nav">
                         <li><a href ="index.jsp">首頁資訊</a></li>
                         <li><a href ="floorplan.jsp">預定系統</a></li>
+                        <li><a href ="events.jsp">預定清單</a></li>
                         <li><a href ="devices.jsp">環境監測</a></li>
                         <!--
                         <li><a href="table.jsp">報表<span class="sr-only">(current)</span></a></li>
                         -->
                         <li><a href="signage.jsp">導引看板</a></li>
-                        <li><a href="dvr.jsp">監視系統</a></li>
                         <!--
                         <li><a href="floorplansetup.jsp">空間管理</a></li>
                         -->
@@ -76,10 +76,8 @@
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="users.jsp">使用者管理</a></li>
                                         <li><a href="rooms.jsp">空間管理</a></li>
-                                        <li><a href="events.jsp">事件管理</a></li>
                                         <li><a href="devicessetup.jsp">裝置管理</a></li>
                                         <li class="divider"></li>
-                                        <li><a href="GetUserInfoAction?name=${admin}">個人設定</a></li>
                                         <li><a href="LogoutServlet">帳號登出</a></li>
                                     </ul>
                                 </li>

@@ -16,6 +16,11 @@ public class Event {
     private int roomId;
     private String deleted;//mark in database
     private String description;
+    private int guestNum;
+    private String guestName;
+    private String guestID;
+    private String guestPhone;
+    private String guestAddress;
     private String start;
     private String end;
     private String createdBy;
@@ -68,6 +73,46 @@ public class Event {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getGuestNum() {
+        return guestNum;
+    }
+
+    public void setGuestNum(int guestNum) {
+        this.guestNum = guestNum;
+    }
+
+    public String getGuestName() {
+        return guestName;
+    }
+
+    public void setGuestName(String guestName) {
+        this.guestName = guestName;
+    }
+
+    public String getGuestID() {
+        return guestID;
+    }
+
+    public void setGuestID(String guestID) {
+        this.guestID = guestID;
+    }
+
+    public String getGuestPhone() {
+        return guestPhone;
+    }
+
+    public void setGuestPhone(String guestPhone) {
+        this.guestPhone = guestPhone;
+    }
+
+    public String getGuestAddress() {
+        return guestAddress;
+    }
+
+    public void setGuestAddress(String guestAddress) {
+        this.guestAddress = guestAddress;
     }
 
     public String getStart() {

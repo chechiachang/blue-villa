@@ -33,6 +33,7 @@
 /home/davidchang/NetBeansProjects/BlueVilla/src/main/java/com/ccc/bm/action/GetAllRoomEvent.java
 /home/davidchang/NetBeansProjects/BlueVilla/src/main/java/com/ccc/bm/action/NewRoomDivAction.java
 /home/davidchang/NetBeansProjects/BlueVilla/src/main/java/com/ccc/bm/action/UpdateRoomAction.java
+/home/davidchang/NetBeansProjects/BlueVilla/src/main/java/com/ccc/bm/action/GetUserInfoAction.java
 /home/davidchang/NetBeansProjects/BlueVilla/src/main/java/com/ccc/bm/action/AddUserAction.java
 /home/davidchang/NetBeansProjects/BlueVilla/src/main/java/com/ccc/smartfloorplan/entity/Floor.java
 /home/davidchang/NetBeansProjects/BlueVilla/src/main/java/com/ccc/smartfloorplan/entity/JdbcConn.java
