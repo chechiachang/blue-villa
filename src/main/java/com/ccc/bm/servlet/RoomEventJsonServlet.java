@@ -113,8 +113,8 @@ public class RoomEventJsonServlet extends HttpServlet {
                         Event event = new Event();
                         event.setId(rs.getInt("id"));
                         event.setRoomId(rs.getInt("roomId"));
-                        event.setStart(rs.getString("start").substring(0, 19).replace(" ", "T"));
-                        event.setEnd(rs.getString("end").substring(0, 19).replace(" ", "T"));
+                        event.setStart(rs.getString("start").substring(0, 19));
+                        event.setEnd(rs.getString("end").substring(0, 19));
                         event.setGuestNum(rs.getInt("guestNum"));
                         event.setGuestName(rs.getString("guestName"));
                         event.setGuestID(rs.getString("guestID"));
